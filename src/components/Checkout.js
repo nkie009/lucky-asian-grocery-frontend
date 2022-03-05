@@ -3,7 +3,7 @@ import '../App.css';
 import axios from 'axios';
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
 
-const BASE_CHECKOUT_URL = "http://localhost:3000/orders/"
+const BASE_CHECKOUT_URL = "https://floating-eyrie-21279.herokuapp.com/orders/"
 
 class Checkout extends React.Component{
 
