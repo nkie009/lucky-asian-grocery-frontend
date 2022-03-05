@@ -11,7 +11,7 @@ import Cart from './Cart';
 import Order from './Order';
 import Checkout from './Checkout'
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://floating-eyrie-21279.herokuapp.com/";
 
 class Home extends React.Component {
 

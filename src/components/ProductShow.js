@@ -10,7 +10,7 @@ import './productshow.css'
 
 
 
-const BASE_PRODUCT_URL = "http://localhost:3000/api";
+const BASE_PRODUCT_URL = "https://floating-eyrie-21279.herokuapp.com/api";
 
 class ProductShow extends React.Component {
 
@@ -29,7 +29,7 @@ class ProductShow extends React.Component {
     revealProduct = async () => {
         this.setState({ loading: true });
         try {
-            const res = await axios.get(`http://localhost:3000/api/products/${this.props.match.params.id}`);
+            const res = await axios.get(`${BASE_PRODUCT_URL}/products/${this.props.match.params.id}`);
             console.log('RES.DATA response', res.data);
             this.setState({
                 resultsProduct: res.data,
@@ -48,7 +48,7 @@ class ProductShow extends React.Component {
         ev.preventDefault();
         console.log('handleSubmit()', this.state.resultsProduct.id)
         try {
-            const cartRes = await axios.post(`http://localhost:3000/api/cart/add/${this.state.resultsProduct.id}`);
+            const cartRes = await axios.post(`${BASE_PRODUCT_URL}/cart/add/${this.state.resultsProduct.id}`);
             this.props.history.push(`/cart`)
             console.log('SHOW CART DATA', cartRes.data);
         } catch (err) {
@@ -91,7 +91,7 @@ class ProductShow extends React.Component {
             {
                 image.startsWith('IMG_')
                 ?
-                <img className="cartImage" src={`http://localhost:3000/assets/${image}`} alt={name}/>
+                <img className="cartImage" src={`https://floating-eyrie-21279.herokuapp.com/assets/${image}`} alt={name}/>
                 :
                 <AdvancedImage cldImg={cld.image(image)} />
             }

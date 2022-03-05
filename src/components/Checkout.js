@@ -77,12 +77,8 @@ class Checkout extends React.Component{
 
         return(
         <div className='checkoutTagline'>
-            <h1>XI JING PING THANKS YOU FOR THE CONTRIBUTION TO OUR COUNTRY</h1>
-            <h1>XI JING PING THANKS YOU FOR THE CONTRIBUTION TO OUR COUNTRY</h1>
-            <h1>XI JING PING THANKS YOU FOR THE CONTRIBUTION TO OUR COUNTRY</h1>
-            <h1>XI JING PING THANKS YOU FOR THE CONTRIBUTION TO OUR COUNTRY</h1>
-            <h1>XI JING PING THANKS YOU FOR THE CONTRIBUTION TO OUR COUNTRY</h1>
-            <h1>XI JING PING THANKS YOU FOR THE CONTRIBUTION TO OUR COUNTRY</h1>
+            <h1>Thanks for shopping</h1>
+           
         </div>
         )
 

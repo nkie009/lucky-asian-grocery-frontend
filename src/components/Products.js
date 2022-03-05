@@ -10,7 +10,7 @@ import { cld } from '../config/index'
 import './productindex.css';
 import { image } from '@cloudinary/url-gen/qualifiers/source';
 
-const BASE_PRODUCTS_URL = 'http://localhost:3000/api/products';
+const BASE_PRODUCTS_URL = 'https://floating-eyrie-21279.herokuapp.com/api/products';
 //replace base url with livelink from heroku to get the images
 
 
@@ -71,7 +71,7 @@ class Products extends React.Component {
           {
             p.image.startsWith('IMG_')
             ?
-            <img className="cartImage" src={`http://localhost:3000/assets/${p.image}`} alt={p.name}/>
+            <img className="cartImage" src={`https://floating-eyrie-21279.herokuapp.com/assets/${p.image}`} alt={p.name}/>
             :
             <AdvancedImage cldImg={cld.image(p.image)} />
           }

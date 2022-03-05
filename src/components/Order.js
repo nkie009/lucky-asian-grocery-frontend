@@ -7,7 +7,7 @@ import NavBar from './Navbar';
 import Checkout from './Checkout';
 import './Cart.css'
 
-const BASE_ORDER_URL = "http://localhost:3000/api/order/"
+const BASE_ORDER_URL = "https://floating-eyrie-21279.herokuapp.com/api/order/"
 class Order extends React.Component {
 
 
@@ -48,7 +48,7 @@ class Order extends React.Component {
         // this.fetchCart();
         //axios request to backend
         try{
-            const orderRes = await axios.post(`http://localhost:3000/orders`, this.state)
+            const orderRes = await axios.post(`https://floating-eyrie-21279.herokuapp.com/orders`, this.state)
             console.log('Order Create Response FOR ADDRESS', orderRes.data)
             this.setState({order: orderRes.data});
           }catch(err){
@@ -61,7 +61,7 @@ class Order extends React.Component {
         ev.preventDefault();
         console.log('submit credit card', this.state);
         try{
-            const orderRes = await axios.patch(`http://localhost:3000/orders/${this.state.order.id}`)
+            const orderRes = await axios.patch(`https://floating-eyrie-21279.herokuapp.com/orders/${this.state.order.id}`)
             console.log('Order Create Response FOR CREDIT CARD', orderRes.data)
             this.props.history.push('/checkout')
             // this.setState({order: orderRes.data});

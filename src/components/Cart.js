@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './Cart.css';
 
-const BASE_CART_URL = "http://localhost:3000/api/cart";
+const BASE_CART_URL = "https://floating-eyrie-21279.herokuapp.com/api/cart";
 
 class Cart extends React.Component {
 
@@ -48,7 +48,7 @@ class Cart extends React.Component {
 
     try{
       // console.log('thiscart')
-      const updateRes = await axios.post(`http://localhost:3000/api/cart/update_qty/${ item.product_id}`, {qty:item.qty})
+      const updateRes = await axios.post(`${BASE_CART_URL}/update_qty/${ item.product_id}`, {qty:item.qty})
       console.log('update cart Let See Response', updateRes.data)
     }catch(err){
       console.log('Error loading AJAX')
@@ -132,7 +132,7 @@ class Cart extends React.Component {
 
     try{
       console.log('thiscartdelete', item)
-      const deleteRes = await axios.delete(`http://localhost:3000/api/cart/destroy/${ item}`)
+      const deleteRes = await axios.delete(`${BASE_CART_URL}/destroy/${ item}`)
       console.log('Delete Cart Response', deleteRes.data)
     }catch(err){
       console.log('Error deleting cart line item', err)
@@ -201,7 +201,7 @@ class Cart extends React.Component {
 
       // console.log('Check image', this.matchImage(c.product_id).image)
       <li className='cartcss' key={c.id}>
-        <img className="cartImage" src={`http://localhost:3000/assets/${c.product.image}`} alt="productName" />
+        <img className="cartImage" src={`https://floating-eyrie-21279.herokuapp.com/assets/${c.product.image}`} alt="productName" />
         <p>{c.product.name}</p>
         <p>${c.product.price}</p>
 
