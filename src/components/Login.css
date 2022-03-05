@@ -1,0 +1,62 @@
+body{
+  width: 100vw;
+  height:100vh;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  background-image:url("/public/background2.png") ;
+  /* overflow: hidden; */
+  background-repeat: unset;
+  background-size: auto;
+}
+.form-box{
+  position: relative;
+  background-color: rgba(2550, 255, 255, 0.4);
+  width: 400px;
+  height: 550px;
+  /* border-radius: 15px; */
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5);
+}
+.form-box .title{
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-indent: 10px;
+  margin: 90px auto 50px;
+}
+.form-box input{
+  width: 300px;
+  height: 30px;
+  /* background: transparent; */
+  text-indent: 8px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: black;
+  margin: 15px auto;
+}
+.form-box input::placeholder{
+  color: rgba(255, 255, 255, 0.8);
+}
+.form-box button {
+  width: 300px;
+  height: 40px;
+  margin: 35px auto 40px auto;
+  border: none;
+  background:#eecc08;
+  color: black;
+  border-radius: 8px;
+  text-indent: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}

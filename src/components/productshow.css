@@ -1,0 +1,10 @@
+.showProduct{
+  margin: 10%;
+  background-color: rgb(238, 222, 196, 0.7);
+  padding: 5%;
+  border-radius: 10px;
+}
+
+.addButton{
+  padding: 5px;
+}
