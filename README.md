@@ -1,11 +1,9 @@
 # README
 
-## Lucky Asian Grocery ECommerce website 
-
-## Group Project 2
+# Lucky Asian Grocery ECommerce website 
 
 
-# Group Member
+## Group Project 2 - Group Member
 - Suraj Sharma
 - Alex Zhang
 - Stanley Chin
